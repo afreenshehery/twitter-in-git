@@ -1,0 +1,17 @@
+<div class="container">
+  <h1 class="text-center">
+    embeded somthing twits here
+  </h1>
+  <br>
+  <div class="form-group">
+    <input 
+     #url class="form-control" type="text" name="url" placeholder="twittwr" id="">
+     <button (click)="getValue(url.value)">click</button>
+  </div>
+
+  <ngx-twitter-timeline
+  [data]="data"
+  [opts]="{tweetLimit:20}"
+  >
+</ngx-twitter-timeline>
+</div>
